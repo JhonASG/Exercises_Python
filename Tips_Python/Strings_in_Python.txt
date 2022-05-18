@@ -1,0 +1,8 @@
+Strings in Python:
+
+Two stuff that we should consider when we work with String, they are:
+
+1) The Strings are immutable objects
+2) From the Python's version 3 it is possible use coding UTF-8 (Emojis included)
+
+Example: "Hello, I am a small menssage".

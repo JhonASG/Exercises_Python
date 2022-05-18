@@ -1,0 +1,26 @@
+In case we want generate a list starting of other and we want that elements storage be completely independent,
+we can support copy module and deepcopy function.
+
+import copy
+
+#Copy traditional
+>>> lista_a = [[1, 2, 3], 1, 2, 3]
+>>> lista_b = list(lista_a)
+>>> lista_c = lista_a[:]
+
+//Copy with the function deepcopy
+>>> lusta_d = copy.deepcopy(lista_a)
+
+//When i add a elements to the list original, the copied lists with traditional methods also they get this 
+changes, however, when i apply the deepcopy function at the it add a element in original list, this element 
+don't add to copy list.
+
+>>> lista_a[0].append(10)
+>>> lista_b
+[[1, 2, 3, 10], 1, 2, 3] # BAD
+
+>>> lista_c
+[[1, 2, 3, 10], 1, 2, 3] # BAD
+
+>>> lista_d # Correct
+ [[1, 2, 3], 1, 2, 3]

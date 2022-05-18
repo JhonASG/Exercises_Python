@@ -1,0 +1,10 @@
+As we know, the function sum enable sum all elements of a list, however, also we should know that, it if so 
+we want, we can tell with said function the amount times of n letters in a sentence.
+
+# To know how many vowels exist inside of the sentence: Hello world.
+
+counter = sum(
+    letter.lower() in ('a', 'e', 'i', 'o', 'u') for letter in 'Hello world'
+)
+
+print(counter)
