@@ -1,0 +1,11 @@
+Exit
+
+Para finalizar nuestro programa, y de esta forma detener la ejecución de todo nuestro código, podemos hacer 
+uso de la función exit del módulo sys.
+
+import sys
+
+if __name__ == '__name__':
+    if len(sys.argv) == 1:
+        print('Es necesario establecer un argumento')
+        sys.exit()

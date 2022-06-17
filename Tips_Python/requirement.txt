@@ -1,0 +1,14 @@
+requeriments.txt
+
+La mejor forma de mantener al día todos las dependencias de nuestro proyecto (Módulos, librerías, Frameworks etc...) es mediante el archivo requirements.txt.
+
+El archivo contendrá todos los requerimientos para que nuestro proyecto funcione correctamente.
+
+Si estas trabajando de forma colaborativa, el archivo requirements.txt es cien por ciento obligatorio.
+
+# Creación del archivo con todos los requerimientos del proyecto.
+# Cada vez que integres una dependencia al proyecto será necesario actualizar el archivo.
+pip freeze > requirements.txt
+
+# Instalación de todos los requerimientos.
+pip install -r requirements.txt

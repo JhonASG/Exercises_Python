@@ -1,0 +1,11 @@
+Conocer si un archivo existe en el sistema operativo
+
+La forma más sencilla de conocer si un archivo existe, o no, es utilizando la función exists del módulo path. 
+La función recibe como argumento la ruta y el nombre del archivo del cual queremos conocer su existencia.
+
+>>> from os import path     
+>>> path.exists("econpy.txt") 
+False 
+
+>>> path.exists("econpy.html")  
+True

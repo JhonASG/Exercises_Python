@@ -1,0 +1,10 @@
+Representación de números grandes
+
+Si queremos representar números grandes en Python, y queremos que la legibilidad cuente, podemos hacer uso de 
+guiones bajos.
+
+# Mucho más legible.
+
+>>> super_numero = 1_000_000_123
+>>> super_numero
+1000000123
